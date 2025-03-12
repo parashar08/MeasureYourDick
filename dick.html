@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Measure Your Dick!</title>
-
-    <style>
-        .container {
-            position: absolute;
-            top: 42vh;
-            left: 42vw;
-        }
-    </style>
+    <link rel="stylesheet" href="dick.css">
 </head>
 <body>
     <div class="container">
@@ -19,17 +12,6 @@
         <p class="js-result"></p>
     </div>
 
-    <script>
-        const dickButton = document.querySelector('.js-dick-button');
-
-        dickButton.addEventListener('click', () => {
-            const randomNumber = (Math.random() * 1000 % 8).toFixed(1);
-            document.querySelector('.js-result').innerHTML = `Your dick size is ${randomNumber} inches`;
-        });
-
-        dickButton.addEventListener('blur', () => {
-            document.querySelector('.js-result').innerHTML = "";
-        });
-    </script>
+    <script src="dick.js"></script>
 </body>
 </html>
